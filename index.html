@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!-- Site HTML Document -->
+<html>
+    <head>
+        <title>My HTML & CSS Cheat Sheet</title>
+        <link href="./styles.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Main Heading -->
+        <div class="Heading">
+            <h1>My HTML & CSS Cheat Sheet</h1>
+        </div>
+
+        <!-- Title -->
+        <div class="Title">
+            <h2>HTML</h2>
+        </div>
+
+        <!-- Table Title -->
+        <div class="Title">
+            <h3>Element Tags</h3>
+        </div>
+        
+        <!-- Element Tags table contents -->
+        <section>
+            <table class="Table">
+                <div class="TableHead">
+                    <thead >
+                        <tr>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                </div>
+                
+                <tbody class="Table Body">
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>body</td>
+                        <td>
+                            The &lt;body&gt; element represents the content of an HTML document. Content inside &lt;body&gt; tags are rendered on the web browsers.<br>
+                            <strong>Note:</strong> There can be only one &lt;body&gt; element in a document.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Div</td>
+                        <td>The &lt;div&gt; element is used as a container that divides an HTML document into sections and is short for “division”. &lt;div&gt; elements can contain <em>flow</em> content such as headings, paragraphs, links, images, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                        <td>Heading</td>
+                        <td>HTML can use six different levels of heading elements. The heading elements are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Paragraph</td>
+                        <td>The &lt;p&gt; paragraph element contains and displays a block of text.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Figure</td>
+                        <td>The &lt;figure&gt; element is used to encapsulate media such as an image, diagram. or code snippet.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>Figure Caption</td>
+                        <td>The &lt;figcaption&gt; element is used to describe the media encapsulated within the &lt;figure&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Section</td>
+                        <td>&lt;section&gt; defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Article</td>
+                        <td>&lt;article&gt; holds content that makes sense on its own such as articles, blogs, and comments.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>Aside</td>
+                        <td>The &lt;aside&gt; element is used to mark additional information that can enhance another element but isnt required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesnt obstruct the main piece of content. An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Image</td>
+                        <td>HTML image &lt;img&gt; elements embed images in documents. The src attribute contains the image URL and is mandatory. &lt;img&gt; is an empty <em>element meaning</em> it should not have a closing tag.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Video</td>
+                        <td>
+                            The &lt;video&gt; element embeds a media player for video playback. The src attribute will contain the URL to the video. Adding the controls attribute will display video controls in the media player.<br>
+                            <strong>Note:</strong> The content inside the opening and closing tag is shown as a fallback in browsers that dont support the element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Audio</td>
+                        <td>
+                            The &lt;audio&gt; element embeds a media player for audio playback. The src attribute will contain the URL to the audio. Adding the controls attribute will display audio controls in the media player.<br>
+                            <strong>Note:</strong> The content inside the opening and closing tag is shown as a fallback in browsers that dont support the element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;embed&gt;</td>
+                        <td>Embed</td>
+                        <td>&lt;embed&gt; can be used to implement any type of media.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>List Item</td>
+                        <td>This element create list items that include: Ordered lists &lt;ol&gt;<br> Unordered lists &lt;ul&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Ordered List</td>
+                        <td>The &lt;ol&gt; ordered list element creates a list of items in sequential order. Each list item appears numbered by default.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Unordered List</td>
+                        <td>The &lt;ul&gt; unordered list element is used to create a list of items in no particular order. Each individual list item will have a bullet point by default.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Span</td>
+                        <td>The &lt;span&gt; element is an inline container for text and can be used to group text for styling purposes. However, as &lt;span&gt; is a generic container to separate pieces of text from a larger body of text, its use should be avoided if a more semantic element is available.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Emphasis</td>
+                        <td>The &lt;em&gt; emphasis element emphasizes text and browsers will usually <em>italicize</em> the emphasized text by default.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Strong</td>
+                        <td>The &lt;strong&gt; element highlights important, serious, or urgent text and browsers will normally render this highlighted text in <strong>bold</strong> by default.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Line Break</td>
+                        <td>The &lt;br&gt; line break element will create a line break in text and is especially useful where a division of text is required, like in a postal address. The line break element requires only an opening tag and must not have a closing tag.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Elements Attributes title -->
+        <div class="Title">
+            <h3> Element Attributes</h3>
+        </div>
+
+        <!-- Element Attributes Table Content -->
+        <section>
+            <table class="Table">
+                <thead class="Table Head">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody class="Table Body">
+                    <tr>
+                        <td>Class</td>
+                        <td>Similar to colspan, the rowspan attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The rowspan value is set to 1 by default and will take any positive integer up to 65534.</td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td>
+                            In HTML, specific and unique id attributes can be assigned to different elements in order to differentiate between them.<br>
+                            When needed, the id value can be called upon by CSS and JavaScript to manipulate, format, and perform specific instructions on that element and that element only. Valid id attributes should begin with a letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alt</td>
+                        <td>
+                            An &lt;img&gt; element can have alternative text via the alt attribute. The alternative text will be displayed if an image fails to render due to an incorrect URL, if the image format is not supported by the browser, if the image is blocked from being displayed, or if the image has not been received from the URL.<br>
+                            The text will be read aloud if screen reading software is used and helps support visually impaired users by providing a text descriptor for the image content on a webpage.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>href</td>
+                        <td>The colspan attribute on a table header &lt;th&gt; or table data &lt;td&gt; element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.</td>
+                    </tr>
+                    <tr>
+                        <td>Style</td>
+                        <td>changing the color of the default text using the style attribute.</td>
+                    </tr>
+                    <tr>
+                        <td>Target</td>
+                        <td>The target attribute on an &lt;a&gt; anchor element specifies where a hyperlink should be opened. A target value of "_blank" will tell the browser to open the hyperlink in a new tab in modern browsers, or in a new window in older browsers or if the browser has had settings changed to open hyperlinks in a new window.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Table Tags title -->
+        <div class="Title">
+            <h3>Table Tags</h3>
+        </div>
+
+        <!-- Table Tags Table Content -->
+        <section>
+            <table class="Table">
+                <thead class="Table Head">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody class="Table Body">
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Table</td>
+                        <td>In HTML, the &lt;table&gt; element has content that is used to represent a two-dimensional table made of rows and columns.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Table Head</td>
+                        <td>The table head element, &lt;thead&gt;, defines the headings of table columns encapsulated in table rows.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Table Body</td>
+                        <td>The table body element, &lt;tbody&gt;, is a semantic element that will contain all table data other than table heading and table footer content. If used, &lt;tbody&gt; will contain all table row &lt;tr&gt; elements, and indicates that &lt;tr&gt; elements make up the body of the table. &lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Table Row</td>
+                        <td>The table row element, &lt;tr&gt;, is used to add rows to a table before adding table data and table headings.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Table Heading</td>
+                        <td>The table heading element, &lt;th&gt;, is used to add titles to rows and columns of a table and must be enclosed in a table row element, &lt;tr&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Table Data</td>
+                        <td>The table data element, &lt;td&gt;, can be nested inside a table row element, &lt;tr&gt;, to add a cell of data to a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Table Footer</td>
+                        <td>The table footer element, &lt;tfoot&gt;, uses table rows to give footer content or to summarize content at the end of a table.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Table Attributes -->
+        <div class="Title">
+            <h3>Table Attributes</h3>
+        </div>
+
+        <!-- Table Attributes Table Content -->
+        <section>
+            <table class="Table">
+                <thead class="Table Head">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody class="Table Body">
+                    <tr>
+                        <td>rowspan</td>
+                        <td>Similar to colspan, the rowspan attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The rowspan value is set to 1 by default and will take any positive integer up to 65534.</td>
+                    </tr>
+                    <tr>
+                        <td>colspan</td>
+                        <td>The colspan attribute on a table header &lt;th&gt; or table data &lt;td&gt; element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+
+    <footer>
+        <div class="footer">
+            <h4>Created by <strong><a href="https://github.com/kevinramirez23" target="_blank" title="My Github">Kevin Ramirez</a></strong></h4>
+        </div>
+    </footer>
+</html>
